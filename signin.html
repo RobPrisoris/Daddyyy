@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form class="login-form" onsubmit="validateForm(event)">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function validateForm(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get the values from the form fields
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Check if the username and password are correct (you can replace this with your validation logic)
+            // For example, you can compare the values with a predefined username and password
+            if (username === 'iloveyou' && password === '09122003') {
+                // If the credentials are correct, redirect to love.html
+                window.location.href = 'love.html';
+            } else {
+                // If the credentials are incorrect, display an error message (you can implement this part)
+                alert('Invalid username or password. Please try again.');
+            }
+        }
+    </script>
+</body>
+
+
+</html>
