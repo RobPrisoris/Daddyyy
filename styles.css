@@ -4,11 +4,11 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #fce4ec; /* Light Pink */
+    background-color: #ffcccc; /* Light Red */
 }
 
 .login-container {
-    background-color: #ff4081; /* Pink */
+    background-color: #ff6666; /* Dark Red */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -28,7 +28,7 @@ input {
 }
 
 button {
-    background-color: #ff80ab; /* Darker Pink */
+    background-color: #ff3333; /* Darker Red */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -38,5 +38,5 @@ button {
 }
 
 button:hover {
-    background-color: #ff4081; /* Lighter Pink */
+    background-color: #ff0000; /* Lighter Red */
 }
